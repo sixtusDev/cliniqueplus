@@ -4,48 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="page">
       <div class="page__left">
-        <h2 class="logo mb-20">Clinique Plus</h2>
-        <button class="app-btn app-btn--primary app-btn--primary-1 mb-10">
-          Bed Status
+        <h2 class="logo mb20">Clinique Plus</h2>
+        <button class="app-btn app-btn--primary app-btn--primary-1 mb20">
+          <div>
+            <i class="far fa-bed"></i>
+            <span>Bed Status</span>
+          </div>
+          <span>&rarr;</span>
         </button>
         <nav class="nav">
           <ul class="nav__link-list">
-            <li class="nav__link-list-item">
-              <span class="test"> Front Office </span>
-
-              <!-- <span class="nav__link"></span> -->
-            </li>
-            <li class="nav__link-list-item">
-              HIS
-              <!-- <span class="nav__link"></span> -->
-            </li>
-            <li class="nav__link-list-item">
-              Blood Bank
-              <!-- <span class="nav__link"></span> -->
-            </li>
-            <li class="nav__link-list-item">
-              LIS
-              <div class="nav__link-sub">
-                <span class="nav__link-sub-item">Order</span>
-                <span class="nav__link-sub-item">QC</span>
-                <span class="nav__link-sub-item">Phleb</span>
-                <span class="nav__link-sub-item">Analysers</span>
+            <li class="nav__link-list-item" id="fo">
+              <div class="nav__link">
+                <i class="far fa-briefcase mr10"></i>
+                <span class="flex1">Front Office</span>
+                <i class="far fa-chevron-right" id="right-icon-fo"></i>
+                <i class="far fa-chevron-down hide" id="down-icon-fo"></i>
               </div>
-              <!-- <span class="nav__link"></span> -->
+            </li>
+            <li class="nav__link-sub hide" id="fo-sub">
+              <span class="nav__link-sub-item">Order</span>
+              <span class="nav__link-sub-item">QC</span>
+              <span class="nav__link-sub-item">Phleb</span>
+              <span class="nav__link-sub-item">Analysers</span>
+            </li>
+            <li class="nav__link-list-item" id="his">
+              <div class="nav__link">
+                <i class="far fa-stethoscope mr10"></i>
+                <span class="flex1">HIS</span>
+                <i class="far fa-chevron-right" id="right-icon-his"></i>
+                <i class="far fa-chevron-down hide" id="down-icon-his"></i>
+              </div>
+            </li>
+            <li class="nav__link-sub hide" id="his-sub">
+              <span class="nav__link-sub-item">Order</span>
+              <span class="nav__link-sub-item">QC</span>
+              <span class="nav__link-sub-item">Phleb</span>
+              <span class="nav__link-sub-item">Analysers</span>
             </li>
             <li class="nav__link-list-item">
-              RIS
-              <!-- <span class="nav__link"></span> -->
+              <div class="nav__link">
+                <i class="far fa-tint mr10"></i>
+                <span class="flex1">Blood Bank</span>
+              </div>
+            </li>
+            <li class="nav__link-list-item" id="lis">
+              <div class="nav__link">
+                <i class="far fa-globe-stand mr10"></i>
+                <span class="flex1">LIS</span>
+                <i class="far fa-chevron-right" id="right-icon-lis"></i>
+                <i class="far fa-chevron-down hide" id="down-icon-lis"></i>
+              </div>
+            </li>
+            <li class="nav__link-sub hide" id="lis-sub">
+              <span class="nav__link-sub-item">Order</span>
+              <span class="nav__link-sub-item">QC</span>
+              <span class="nav__link-sub-item">Phleb</span>
+              <span class="nav__link-sub-item">Analysers</span>
             </li>
             <li class="nav__link-list-item">
-              Insurance
-              <!-- <span class="nav__link"></span> -->
+              <div class="nav__link">
+                <i class="far fa-signature mr10"></i>
+                <span class="flex1">RIS</span>
+                <i class="far fa-chevron-right"></i>
+              </div>
+            </li>
+            <li class="nav__link-list-item">
+              <div class="nav__link">
+                <i class="far fa-heart mr10"></i>
+                <span class="flex1">Insurance</span>
+                <i class="far fa-chevron-right"></i>
+              </div>
             </li>
           </ul>
         </nav>
