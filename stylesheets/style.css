@@ -1,10 +1,5 @@
-:root {
-  --primary-color: #d50000;
-  --secondary-color: #ff1744;
-  --white: #fff;
-  --light-grey: #e0e0e0;
-  --dark-grey: #616161;
-}
+@import url(./variables.css);
+@import url(./components.css);
 
 *,
 *::before,
@@ -24,20 +19,54 @@ html {
 }
 
 .page__left {
-  width: 30%;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+  width: 20%;
+  background-color: var(--white);
   height: 100vh;
 }
 
 .page__right {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   background-color: red;
   height: 100vh;
 }
 
 .nav {
+  width: 100%;
+}
+
+.nav__link-list {
+  list-style: none;
+}
+
+.nav__link-list-item {
+  width: 100%;
+  color: var(--dark-grey);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+
+.nav__link-list-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.nav__link {
+}
+
+.nav__link-sub {
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  background-color: var(--light-grey-2);
+}
+
+.nav__link-sub-item {
+  display: block;
 }
 
 .header {
