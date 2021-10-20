@@ -59,7 +59,6 @@ html {
   display: flex;
   flex-direction: column;
   width: 83%;
-  background-color: red;
   height: 100vh;
 }
 
@@ -121,12 +120,59 @@ html {
 }
 
 .header {
-  height: 50px;
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background-color: var(--light-grey-2);
+  color: var(--dark-grey);
+  padding: 0 1.5rem;
+  border-bottom: 1px solid var(--light-grey-3);
+}
+
+.menu {
+  display: flex;
+  padding-right: 1.5rem;
+  align-items: center;
+  height: 100%;
+  border-right: 1px solid var(--light-grey-3);
+}
+
+.menu__icon,
+.search__icon {
+  font-size: 1.5rem;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.5rem;
+  border-right: 1px solid var(--light-grey-3);
+}
+
+.search__icon {
+  color: var(--light-grey-3);
+}
+
+.search__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: 1rem;
+}
+
+.search__input:focus {
+  border-bottom: 1px solid var(--light-grey-3);
+}
+
+.search__input::placeholder {
+  font-size: 1.1rem;
 }
 
 .main {
-  background-color: indigo;
+  /* background-color: indigo; */
 }
 
 .main__left {
