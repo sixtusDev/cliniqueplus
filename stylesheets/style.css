@@ -6,22 +6,47 @@
   --dark-grey: #616161;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .page {
+  display: flex;
+  height: 100vh;
 }
 
 .page__left {
+  width: 30%;
+  background-color: blue;
+  height: 100vh;
 }
 
 .page__right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: red;
+  height: 100vh;
 }
 
 .nav {
 }
 
 .header {
+  height: 50px;
+  background-color: aqua;
 }
 
 .main {
+  background-color: indigo;
 }
 
 .main__left {
