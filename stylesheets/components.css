@@ -9,6 +9,7 @@
 }
 
 .app-btn--primary {
+  border-radius: 4px;
   background-color: var(--primary-color);
   color: var(--light-grey-1);
 }
@@ -25,6 +26,9 @@
 }
 
 .app-btn--secondary {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  background-color: var(--white);
 }
 
 .mb10 {
