@@ -23,3 +23,13 @@ navLinks.forEach((navLink) => {
     }
   });
 });
+
+const userEl = document.querySelector(".user");
+
+userEl.addEventListener("mouseover", () => {
+  document.querySelector(".user__menu").classList.remove("hide");
+});
+
+userEl.addEventListener("mouseout", () => {
+  document.querySelector(".user__menu").classList.add("hide");
+});

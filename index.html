@@ -109,15 +109,52 @@
             <i class="far fa-envelope notif__envelope-icon"></i>
             <i class="far fa-expand-arrows-alt notif__expand-icon"></i>
             <div class="user">
-              <img src="" alt="user" />
-              <span>Samson Monday</span>
+              <img class="user__image" src="./images/headshot.jpg" alt="user" />
+              <span class="user__name">Samson Monday</span>
               <i class="far fa-chevron-right" id="right-icon-lis"></i>
               <i class="far fa-chevron-down hide" id="down-icon-lis"></i>
+
+              <div class="user__menu hide">
+                <div class="flex-row align-items-center">
+                  <i class="far fa-user"></i>
+                  <div class="flex1">
+                    <p>Profile</p>
+                    <p>Update & manage</p>
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <i class="far fa-shield-check"></i>
+                  <div>
+                    <p>Help & Support</p>
+                    <p>Contact & FAQ</p>
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <i class="far fa-exclamation-triangle"></i>
+                  <div>
+                    <p>Complaints</p>
+                    <p>Report error</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </header>
         <main class="main">
-          <div class="main__left"></div>
+          <div class="main__left">
+            <div class="user-detail">
+              <img
+                class="user-detail__image"
+                src="./images/headshot.jpg"
+                alt="headshot"
+              />
+              <p class="user-detail__name"></p>
+              <div>
+                <button>Change Password</button>
+                <div>Edit</div>
+              </div>
+            </div>
+          </div>
           <div class="main__right"></div>
         </main>
       </div>
