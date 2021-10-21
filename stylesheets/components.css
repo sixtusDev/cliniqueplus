@@ -17,10 +17,10 @@
 
 .app-btn--primary-1 {
   font-size: 1.6rem;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -50,6 +50,10 @@
   margin-right: 2rem;
 }
 
+.mr50 {
+  margin-right: 5rem;
+}
+
 .border-bottom {
   border-bottom: 1px solid var(--light-grey-3);
 }
@@ -57,18 +61,20 @@
 .bubble {
   position: relative;
   background: #fff;
+  background-color: var(--primary-color);
+  color: var(--light-grey-1);
 }
 
 .bubble:before {
-  /* content: "";
+  content: "";
   position: absolute;
   display: block;
   width: 0;
   z-index: 1;
   border-style: solid;
-  border-color: #fff transparent;
+  border-color: var(--primary-color) transparent;
   border-width: 19px 19px 0;
-  bottom: -19px;
-  left: 11%;
-  margin-left: -19px; */
+  bottom: -9px;
+  left: 38%;
+  margin-left: -19px;
 }

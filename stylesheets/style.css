@@ -62,6 +62,14 @@ ul {
   overflow-y: scroll;
 }
 
+.toggle-page-left-width {
+  width: 0px !important;
+}
+
+.toggle-page-right-width {
+  width: 100% !important;
+}
+
 *::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -159,7 +167,7 @@ ul {
 .header {
   display: flex;
   align-items: center;
-  height: 6rem;
+  min-height: 6rem;
   background-color: var(--light-grey-1);
   color: var(--dark-grey);
   padding: 0 1.5rem;
@@ -253,10 +261,6 @@ ul {
   position: relative;
 }
 
-.user * {
-  pointer-events: none;
-}
-
 .user__image {
   height: 20px;
   border-radius: 50%;
@@ -271,7 +275,7 @@ ul {
 .user__menu {
   font-size: 1.3rem;
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   left: 0;
   width: 100%;
   border-radius: 2px;
@@ -291,6 +295,7 @@ ul {
   font-size: 1.7rem;
   margin-right: 1rem;
   color: var(--secondary-color);
+  z-index: 100;
 }
 
 .user__menu > div {

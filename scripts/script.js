@@ -1,5 +1,4 @@
 const navLinks = document.querySelectorAll(".nav__link-list-item");
-
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", (e) => {
     switch (e.target.id) {
@@ -25,16 +24,28 @@ navLinks.forEach((navLink) => {
 });
 
 const userEl = document.querySelector(".user");
-
 userEl.addEventListener("mouseover", () => {
   document.querySelector(".user__menu").classList.remove("hide");
+  document.querySelector("#right-icon-user-menu").classList.add("hide");
+  document.querySelector("#down-icon-user-menu").classList.remove("hide");
 });
 
 userEl.addEventListener("mouseout", () => {
   document.querySelector(".user__menu").classList.add("hide");
+  document.querySelector("#right-icon-user-menu").classList.remove("hide");
+  document.querySelector("#down-icon-user-menu").classList.add("hide");
 });
 
 const menuIconEl = document.querySelector(".menu__icon");
 menuIconEl.addEventListener("click", () => {
-  document.querySelector(".page__left").classList.toggle("toggle-drawer");
+  document
+    .querySelector(".page__left")
+    .classList.toggle("toggle-page-left-width");
+  document
+    .querySelector(".page__right")
+    .classList.toggle("toggle-page-right-width");
+});
+
+document.querySelector(".search__icon").addEventListener("click", () => {
+  document.querySelector(".search__input").focus();
 });
