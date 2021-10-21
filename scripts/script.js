@@ -33,3 +33,8 @@ userEl.addEventListener("mouseover", () => {
 userEl.addEventListener("mouseout", () => {
   document.querySelector(".user__menu").classList.add("hide");
 });
+
+const menuIconEl = document.querySelector(".menu__icon");
+menuIconEl.addEventListener("click", () => {
+  document.querySelector(".page__left").classList.toggle("toggle-drawer");
+});

@@ -15,6 +15,7 @@
 }
 
 .app-btn--primary-1 {
+  font-size: 1.1rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 2px;
@@ -37,4 +38,31 @@
 
 .mb20 {
   margin-bottom: 2rem;
+}
+
+.mr10 {
+  margin-right: 1rem;
+}
+
+.mr20 {
+  margin-right: 2rem;
+}
+
+.bubble {
+  position: relative;
+  background: #fff;
+}
+
+.bubble:before {
+  /* content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #fff transparent;
+  border-width: 19px 19px 0;
+  bottom: -19px;
+  left: 11%;
+  margin-left: -19px; */
 }
