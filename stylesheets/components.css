@@ -3,6 +3,7 @@
 .app-btn {
   padding: 0.6rem 1rem;
   font-size: 1.5rem;
+  font-family: inherit;
   border: none;
   outline: none;
   cursor: pointer;
@@ -47,6 +48,10 @@
 
 .mr20 {
   margin-right: 2rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--light-grey-3);
 }
 
 .bubble {

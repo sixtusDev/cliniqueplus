@@ -122,26 +122,30 @@
 
               <div class="user__menu hide">
                 <div class="flex-row align-items-center">
-                  <i class="far fa-user"></i>
+                  <i class="far fa-user user__menu-icon"></i>
                   <div class="flex1">
                     <p>Profile</p>
                     <p>Update & manage</p>
                   </div>
                 </div>
                 <div class="flex-row">
-                  <i class="far fa-shield-check"></i>
+                  <i class="far fa-shield-check user__menu-icon"></i>
                   <div>
                     <p>Help & Support</p>
                     <p>Contact & FAQ</p>
                   </div>
                 </div>
                 <div class="flex-row">
-                  <i class="far fa-exclamation-triangle"></i>
+                  <i class="far fa-exclamation-triangle user__menu-icon"></i>
                   <div>
                     <p>Complaints</p>
                     <p>Report error</p>
                   </div>
                 </div>
+                <button class="flex-row user__menu-btn">
+                  <i class="far fa-power-off"></i>
+                  Logout
+                </button>
               </div>
             </div>
           </div>
@@ -149,12 +153,14 @@
         <main class="main">
           <div class="main__left">
             <div class="user-detail">
-              <img
-                class="user-detail__image"
-                src="./images/headshot.jpg"
-                alt="headshot"
-              />
-              <p class="user-detail__name">Prescilla Joe</p>
+              <div class="border-bottom">
+                <img
+                  class="user-detail__image"
+                  src="./images/headshot.jpg"
+                  alt="headshot"
+                />
+                <p class="user-detail__name">Prescilla Joe</p>
+              </div>
               <div class="user-detail__cta">
                 <button class="app-btn app-btn--primary">
                   Change Password
@@ -264,7 +270,17 @@
           </div>
         </main>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__copy">
+          CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Contact Us</a>
+          <a href="#" class="footer__link">Tersms Of Service</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
