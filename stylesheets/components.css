@@ -34,6 +34,40 @@
   color: inherit;
 }
 
+.hide {
+  display: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-contents-around {
+  justify-content: space-around;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.toggle-page-right-width {
+  width: 100% !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--light-grey-3);
+  outline: 1px solid var(--light-grey-3);
+}
+
 .mb10 {
   margin-bottom: 1rem;
 }
