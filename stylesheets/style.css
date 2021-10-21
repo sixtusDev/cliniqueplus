@@ -17,6 +17,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  overflow: hidden;
 }
 
 ul {
@@ -58,18 +59,18 @@ ul {
   width: 17%;
   background-color: var(--white);
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
-.page__left::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-.page__left::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+*::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2); */
 }
 
-.page__left::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: var(--light-grey-3);
   outline: 1px solid var(--light-grey-3);
 }
@@ -81,15 +82,25 @@ ul {
   height: 100vh;
 }
 
-.logo-container {
+.logo {
   width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--light-grey-1);
+  padding-bottom: 1rem;
 }
 
-.logo {
+.logo__image {
+  width: 15%;
+  margin-right: 0.5rem;
+}
+
+.logo__text {
+  font-size: 1.8rem;
+  display: inline-block;
   color: #616161;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--light-grey-1);
 }
 
 .nav {
@@ -114,12 +125,12 @@ ul {
   width: 100%;
   color: var(--dark-grey);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
 .nav__link-list-item:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nav__link {
@@ -130,15 +141,15 @@ ul {
 }
 
 .nav__link-sub {
-  padding: 0.5rem 0;
-  padding-left: 4rem;
-  margin-top: -7px;
+  padding: 1rem 0;
+  padding-left: 5rem;
+  margin-top: -10px;
   margin-bottom: 1rem;
   background-color: var(--light-grey-1);
 }
 
 .nav__link-sub-item:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .nav__link-sub-item {
@@ -148,7 +159,7 @@ ul {
 .header {
   display: flex;
   align-items: center;
-  height: 48px;
+  height: 6rem;
   background-color: var(--light-grey-1);
   color: var(--dark-grey);
   padding: 0 1.5rem;
@@ -164,7 +175,7 @@ ul {
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -172,8 +183,8 @@ ul {
 .notif__bell-icon,
 .notif__envelope-icon,
 .notif__expand-icon {
-  font-size: 1.2rem;
-  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  margin-right: 2.5rem;
   cursor: pointer;
 }
 
@@ -202,7 +213,7 @@ ul {
 }
 
 .search__input::placeholder {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .notif {
@@ -246,27 +257,28 @@ ul {
 .user__image {
   height: 20px;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .user__name {
-  font-size: 1.2rem;
-  margin-right: 1rem;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .user__menu {
+  font-size: 1.3rem;
   position: absolute;
-  top: 2.2rem;
+  top: 2.5rem;
   left: 0;
   width: 100%;
   border-radius: 2px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   background-color: var(--white);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .user__menu i {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-right: 1rem;
   color: var(--secondary-color);
 }
@@ -276,17 +288,17 @@ ul {
 }
 
 .user__menu > div:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .main {
   color: var(--dark-grey);
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 6rem);
   padding: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  align-items: center;
   background-color: var(--light-grey-1);
-  overflow: scroll;
 }
 
 .main__left {
@@ -294,6 +306,7 @@ ul {
   border-radius: 3px;
   margin-right: 1rem;
   background-color: var(--white);
+  height: fit-content;
 }
 
 .user-detail {
@@ -301,7 +314,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .user-detail__image {
@@ -311,7 +324,7 @@ ul {
 
 .user-detail__name {
   margin-top: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: var(--secondary-color);
 }
 
@@ -342,6 +355,7 @@ ul {
 
 .main__right {
   width: 75%;
+  height: fit-content;
 }
 
 .profile__heading {
@@ -375,6 +389,8 @@ ul {
   border-radius: 3px;
   background-color: var(--white);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  max-height: 40rem;
+  overflow-y: scroll;
 }
 
 .footer {
